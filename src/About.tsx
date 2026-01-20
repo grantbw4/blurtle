@@ -13,16 +13,14 @@ export function About() {
           <i>Wordle</i>
         </a>{" "}
         by <a href="https://twitter.com/powerlanguish">powerlanguage</a>
-      .</p>
+      . This remix was made by Grant Williams and Max Allison.</p>
       <p>
-        This game is also heavily indebted to the game {" "}
+        This game is also heavily indebted to the game{" "}
         <a href="https://hellowordl.net/">
           <i>hello wordl</i>
         </a>{" "}
         and the code it has made publicly accessible on <a href="https://github.com/lynn/hello-wordl">GitHub</a>
       .</p>
-      <p>
-      </p>
       <hr />
       <p>Basically, the goal of this game to guess a secret word as <i>quickly</i> as possible. In other words, you need to <i>blurt</i> out words until you arrive at the correct answer. You have unlimited guesses, but you will be timed.</p>
       <hr />

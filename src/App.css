@@ -109,13 +109,17 @@ table.Game-rows > tbody {
 .Game-keyboard {
   display: flex;
   flex-direction: column;
-  justify-self: end;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .Game-keyboard-row {
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: center;
+  width: 100%;
 }
 
 .Game-keyboard-button {
@@ -366,4 +370,120 @@ a:active {
   vertical-align: middle;
   white-space: nowrap;
   word-wrap: break-word;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Mobile devices (phones) */
+@media screen and (max-width: 480px) {
+  body {
+    margin: 5px;
+    height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile browsers */
+  }
+
+  .App-container {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  .Page-top {
+    height: auto;
+    min-height: 15vh;
+  }
+
+  /* Smaller letter boxes on mobile */
+  .Row-letter {
+    max-width: 52px;
+    height: 52px;
+    font-size: 32px;
+    margin: 1px;
+  }
+
+  /* Keyboard optimizations for mobile */
+  .Game-keyboard {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 2px;
+  }
+
+  .Game-keyboard-button {
+    min-height: 50px;
+    font-size: 16px;
+    margin: 1px;
+    padding: 1px;
+    border-radius: 3px;
+  }
+
+  .Game-keyboard-button-wide {
+    font-size: 12px;
+  }
+
+  /* Stopwatch adjustments */
+  .stopwatch {
+    margin-top: -80px;
+    height: auto;
+  }
+
+  .time {
+    font-size: 36px;
+  }
+
+  #stars-outer {
+    font-size: 2em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small phones (iPhone SE, etc.) */
+@media screen and (max-width: 375px) {
+  .Row-letter {
+    max-width: 44px;
+    height: 44px;
+    font-size: 26px;
+  }
+
+  .Game-keyboard-button {
+    min-height: 44px;
+    font-size: 14px;
+  }
+
+  .time {
+    font-size: 28px;
+  }
+}
+
+/* Tablets and small desktops */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .App-container {
+    max-width: 500px;
+    padding: 0 16px;
+  }
+
+  .Game-keyboard {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop and large screens */
+@media screen and (min-width: 769px) {
+  .App-container {
+    max-width: 550px;
+  }
+
+  .Game-keyboard {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .Row-letter {
+    max-width: 70px;
+    height: 70px;
+  }
 }
