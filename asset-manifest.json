@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/blurtle/static/css/main.077f533d.css",
-    "main.js": "/blurtle/static/js/main.c77a4e06.js",
+    "main.css": "/blurtle/static/css/main.c650db8d.css",
+    "main.js": "/blurtle/static/js/main.7bf24896.js",
     "index.html": "/blurtle/index.html",
-    "main.077f533d.css.map": "/blurtle/static/css/main.077f533d.css.map",
-    "main.c77a4e06.js.map": "/blurtle/static/js/main.c77a4e06.js.map"
+    "main.c650db8d.css.map": "/blurtle/static/css/main.c650db8d.css.map",
+    "main.7bf24896.js.map": "/blurtle/static/js/main.7bf24896.js.map"
   },
   "entrypoints": [
-    "static/css/main.077f533d.css",
-    "static/js/main.c77a4e06.js"
+    "static/css/main.c650db8d.css",
+    "static/js/main.7bf24896.js"
   ]
 }
